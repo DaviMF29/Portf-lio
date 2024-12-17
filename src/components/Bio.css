@@ -1,0 +1,75 @@
+/* Contêiner Principal */
+.bio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+/* Conteúdo Interno */
+.bio-content {
+  max-width: 800px;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Título */
+.bio-title {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #333; /* Cor escura */
+}
+
+/* Parágrafo */
+.bio-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555; /* Cinza suave */
+  text-align: center;
+}
+
+/* RESPONSIVIDADE */
+
+/* Telas menores que 768px (tablets) */
+@media (max-width: 768px) {
+  .bio-title {
+      font-size: 2rem; /* Reduz o tamanho do título */
+  }
+
+  .bio-description {
+      font-size: 1rem; /* Reduz o tamanho do texto */
+      text-align: justify;
+  }
+
+  .bio-content {
+      padding: 15px;
+  }
+}
+
+/* Telas menores que 480px (celulares) */
+@media (max-width: 480px) {
+  .bio-title {
+      font-size: 1.5rem;
+  }
+
+  .bio-description {
+      font-size: 0.9rem;
+      text-align: justify;
+  }
+
+  .bio-content {
+      padding: 10px;
+  }
+}
+
+/* Dark mode styles */
+body.dark-mode .bio-title {
+  color: #e0e0e0; /* Branco suave */
+}
+
+body.dark-mode .bio-description {
+  color: #cccccc; /* Branco suave */
+}
