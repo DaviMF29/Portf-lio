@@ -16,7 +16,7 @@ const Experience = () => {
       <div className="experience-item">
         <div className="lateralbar"></div>
         <div className="content">
-          <h2>Antonio Vitor</h2>
+          <h2>Antonio Victor</h2>
           <p><FaGraduationCap className="icon" />Estudante de Ciência da Computação (P8)</p>
           <p><FaBriefcase className="icon" />Atualmente em um estágio na Compass UOL</p>
         </div>
