@@ -1,100 +1,122 @@
+/* GERAL */
 .projects {
-    padding: 20px;
+    padding: 10px;
+    margin: 0 auto;
 }
 
 .title {
-    text-align: justify;
-    margin-bottom: 40px;
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 20px;
 }
 
 .title h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
+    font-size: 2rem;
     color: var(--black);
     margin-bottom: 10px;
 }
 
+/* Cartões */
 .card {
-    margin-top: 50px;
     display: flex;
     justify-content: center;
-    gap: 50px;
-    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Quebra os elementos em várias linhas */
 }
 
 .card-infos {
+    width: 100%;
+    max-width: 320px; /* Ajuste de largura máxima */
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 400px;
-    padding: 20px;
-    border: 1px solid #5c5c5c;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #9c9c9c;
     border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     transition: transform 0.3s ease;
-    margin-bottom: 40px;
-}
-
-.card-infos:hover {
-    transform: scale(1.05);
 }
 
 .card-infos img {
-    max-width: 100%;
-    max-height: 300px;
-    height: auto;
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
     border-radius: 8px;
     margin-bottom: 10px;
-    filter: grayscale(100%);
-    transition: filter 0.3s ease;
-}
-
-.card-infos:hover img {
-    filter: grayscale(0%);
 }
 
 .card-infos h1 {
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 1.5rem;
     color: #333;
-    margin-bottom: 10px;
-    text-align: center;
+    margin-bottom: 5px;
 }
 
 .card-infos h2 {
-    font-size: 1.2rem;
-    font-weight: normal;
-    margin-bottom: 10px;
+    font-size: 1rem;
     text-align: justify;
-}
-
-/* Dark mode styles */
-
-body.dark-mode .title h1 {
-    color: var(--white);
-}
-
-body.dark-mode .card-infos {
-    border: none !important; /* Remove a borda */
-    box-shadow: none !important; /* Remove a sombra */
-    background-color: #1e1e1e;
-}
-
-body.dark-mode .card-infos h1,
-body.dark-mode .card-infos h2 {
-    color: var(--white);
-}
-
-body.dark-mode .card-infos img {
-    filter: grayscale(100%);
-}
-
-body.dark-mode .card-infos:hover img {
-    filter: grayscale(0%);
+    margin-bottom: 5px;
 }
 
 /* RESPONSIVIDADE */
+
+/* Dispositivos pequenos (máx 480px) */
+@media (max-width: 480px) {
+    .title h1 {
+        font-size: 1.5rem;
+    }
+
+    .card {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .card-infos {
+        width: 90%;
+        max-width: none;
+        padding: 10px;
+        box-shadow: none;
+        border: none;
+    }
+
+    .card-infos img {
+        width: 100%;
+        max-height: 150px;
+    }
+
+    .card-infos h1 {
+        font-size: 1.2rem;
+    }
+
+    .card-infos h2 {
+        font-size: 0.9rem;
+    }
+}
+
+/* Telas menores que 768px */
+@media (max-width: 768px) {
+    .card {
+        gap: 15px;
+    }
+
+    .card-infos {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    .card-infos img {
+        max-height: 180px;
+    }
+
+    .card-infos h1 {
+        font-size: 1.3rem;
+    }
+
+    .card-infos h2 {
+        font-size: 1rem;
+    }
+}
 
 /* Telas menores que 1024px (tablets) */
 @media (max-width: 1024px) {
@@ -113,81 +135,14 @@ body.dark-mode .card-infos:hover img {
         padding: 15px;
         border: none;
         background: transparent;
+        border: none;
     }
 
     .card-infos h1 {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
     }
 
     .card-infos h2 {
-        font-size: 1rem;
-    }
-}
-
-/* Telas menores que 768px (celulares grandes) */
-@media (max-width: 768px) {
-    .card {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .card-infos {
-        width: 100%; /* Garante que os cartões ocupem toda a largura disponível */
-        max-width: 90%; /* Limita a largura máxima dos cartões */
-        margin-bottom: 20px;
-        border: none; /* Remove a borda */
-        background-color: transparent; /* Remove o fundo diferente */
-    }
-
-    .card-infos img {
-        width: 100%; /* Garante que as imagens ocupem toda a largura do cartão */
-        height: auto; /* Mantém a proporção da imagem */
-        max-height: 250px; /* Define a altura máxima das imagens */
-        filter: none; /* Remove o filtro de escala de cinza */
-    }
-
-    .card-infos h1 {
-        font-size: 1.5rem;
-    }
-
-    .card-infos h2 {
-        font-size: 0.9rem;
-    }
-}
-
-/* Telas menores que 480px (celulares pequenos) */
-@media (max-width: 480px) {
-    .projects {
-        padding: 10px;
-        margin-top: 20px;
-    }
-
-    .title {
-        font-size: 1.5rem;
-        margin-bottom: 20px;
-    }
-
-    .card-infos {
-        width: 100%; /* Garante que os cartões ocupem toda a largura disponível */
-        max-width: 90%; /* Limita a largura máxima dos cartões */
-        padding: 10px;
-        border: none; /* Remove a borda */
-        background-color: transparent; /* Remove o fundo diferente */
-    }
-
-    .card-infos img {
-        width: 100%; /* Garante que as imagens ocupem toda a largura do cartão */
-        height: auto; /* Mantém a proporção da imagem */
-        max-height: 200px; /* Define a altura máxima das imagens */
-        filter: none; /* Remove o filtro de escala de cinza */
-    }
-
-    .card-infos h1 {
-        font-size: 1.3rem;
-    }
-
-    .card-infos h2 {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 }
