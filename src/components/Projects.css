@@ -28,6 +28,7 @@
     align-items: center;
     max-width: 400px;
     padding: 20px;
+    border: 1px solid #5c5c5c;
     border-radius: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: #fff;
@@ -75,7 +76,8 @@ body.dark-mode .title h1 {
 }
 
 body.dark-mode .card-infos {
-    border: 1px solid #444;
+    border: none !important; /* Remove a borda */
+    box-shadow: none !important; /* Remove a sombra */
     background-color: #1e1e1e;
 }
 
@@ -96,33 +98,21 @@ body.dark-mode .card-infos:hover img {
 
 /* Telas menores que 1024px (tablets) */
 @media (max-width: 1024px) {
-
-    body.dark-mode .card-infos img {
-        filter: none !important; /* Remove o filtro */
+    .card {
+        gap: 30px;
     }
 
     body.dark-mode .card-infos {
-        box-shadow : none;
+        border: none !important; /* Remove a borda */
+        box-shadow: none !important; /* Remove a sombra */
         background-color: transparent;
-    }
-
-    .card {
-        gap: 30px;
     }
 
     .card-infos {
         max-width: 350px;
         padding: 15px;
-        box-shadow : none;
-        background-color: transparent;
-        border: 1px solid var(--light-gray);
-
-    }
-
-    .card-infos img {
-        max-height: 250px;
-        filter: none;
-        
+        border: none;
+        background: transparent;
     }
 
     .card-infos h1 {
@@ -132,16 +122,10 @@ body.dark-mode .card-infos:hover img {
     .card-infos h2 {
         font-size: 1rem;
     }
-
 }
 
 /* Telas menores que 768px (celulares grandes) */
 @media (max-width: 768px) {
-
-    body.dark-mode .card-infos img {
-        filter: none !important; /* Remove o filtro */
-    }
-
     .card {
         flex-direction: column;
         align-items: center;
@@ -149,13 +133,18 @@ body.dark-mode .card-infos:hover img {
     }
 
     .card-infos {
-        max-width: 90%;
+        width: 100%; /* Garante que os cartões ocupem toda a largura disponível */
+        max-width: 90%; /* Limita a largura máxima dos cartões */
         margin-bottom: 20px;
+        border: none; /* Remove a borda */
+        background-color: transparent; /* Remove o fundo diferente */
     }
 
     .card-infos img {
-        max-height: 250px;
-        filter: none;
+        width: 100%; /* Garante que as imagens ocupem toda a largura do cartão */
+        height: auto; /* Mantém a proporção da imagem */
+        max-height: 250px; /* Define a altura máxima das imagens */
+        filter: none; /* Remove o filtro de escala de cinza */
     }
 
     .card-infos h1 {
@@ -165,17 +154,10 @@ body.dark-mode .card-infos:hover img {
     .card-infos h2 {
         font-size: 0.9rem;
     }
-
-
 }
 
 /* Telas menores que 480px (celulares pequenos) */
 @media (max-width: 480px) {
-
-    body.dark-mode .card-infos img {
-        filter: none !important; /* Remove o filtro */
-    }
-
     .projects {
         padding: 10px;
         margin-top: 20px;
@@ -187,12 +169,18 @@ body.dark-mode .card-infos:hover img {
     }
 
     .card-infos {
+        width: 100%; /* Garante que os cartões ocupem toda a largura disponível */
+        max-width: 90%; /* Limita a largura máxima dos cartões */
         padding: 10px;
+        border: none; /* Remove a borda */
+        background-color: transparent; /* Remove o fundo diferente */
     }
 
     .card-infos img {
-        max-height: 200px;
-        filter: none;
+        width: 100%; /* Garante que as imagens ocupem toda a largura do cartão */
+        height: auto; /* Mantém a proporção da imagem */
+        max-height: 200px; /* Define a altura máxima das imagens */
+        filter: none; /* Remove o filtro de escala de cinza */
     }
 
     .card-infos h1 {
@@ -202,5 +190,4 @@ body.dark-mode .card-infos:hover img {
     .card-infos h2 {
         font-size: 0.8rem;
     }
-
 }
