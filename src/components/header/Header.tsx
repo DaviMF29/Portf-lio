@@ -18,7 +18,7 @@ const Header = () => {
     <div className="header">
       <div className="header-left">
         <div className="header-logo">
-          <Link to="Portfolio/"> {/* Usa Link para roteamento interno */}
+          <Link to="/"> {/* Usa Link para roteamento interno */}
             <img src={logo} alt="Logo" />
           </Link>
         </div>

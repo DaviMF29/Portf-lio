@@ -35,7 +35,7 @@ const Projects = () => {
                 </div>
             </div>
             <div className="viewall">
-                <a href="/Portfolio/projects">{t("view_all")}</a>
+                <a href="/projects">{t("view_all")}</a>
             </div>
         </div>
     );
