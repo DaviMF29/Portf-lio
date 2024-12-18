@@ -92,6 +92,26 @@
 .action-button a:hover {
     background-color: #555;
 }
+
+/* Título com Logo */
+.project-title-with-logo {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    gap: 10px; /* Espaço entre a logo e o título */
+  }
+  
+  .project-logo {
+    width: 40px; /* Largura da logo */
+    height: 40px; /* Altura da logo */
+    object-fit: contain;
+  }
+  
+  .project-title-with-logo h1 {
+    margin: 0; /* Remove margem padrão */
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
 /* Dark mode styles */
 body.dark-mode .projects-container {
     color: var(--white);
