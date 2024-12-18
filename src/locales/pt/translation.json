@@ -2,11 +2,13 @@
   "projects": "Projetos",
   "about": "Sobre",
   "about_us": "Somos Davi Miguel e Antônio Victor, formados e graduandos em Ciência da Computação pela Universidade Estadual da Paraíba. Criamos sites funcionais e responsivos, focados em atender às necessidades de empresas e profissionais que buscam se destacar no meio digital.",
-  "info_site_moviemetricks": "Site para coletar informações de filmes e séries, com detalhes sobre elenco, sinopse, direção e avaliações, facilitando a busca por suas produções favoritas.",
-  "info_site_academia": "Site para uma academia fictícia com detalhes sobre serviços, planos disponíveis, horários e informações de contato, facilitando o acesso dos clientes.",
+  "info_site_moviemetricks": "Site para coletar informações sobre filmes e séries, desde elenco, sinopse, direção até avaliações, facilitando a busca pelos seus filmes favoritos.",
+  "info_site_academia": "Site de uma academia fictícia com serviços, planos disponíveis, horários e informações de contato, facilitando o acesso dos clientes.",
+  "info_site_posterfy": "Site que usa a API do Spotify para criar pôsteres de álbuns, permitindo pesquisar, coletar dados e organizar informações de maneira atrativa.",
   "view_all": "Ver todos",
   "graduating_davi": "Formado em Ciência da Computação",
-  "graduanting_antonio": "Graduando em Ciência da Computação (oitavo período)",
+  "graduanting_victor": "Graduando em Ciência da Computação (oitavo período)",
   "internship_davi": "Atualmente em um estágio em desenvolvimento de software",
-  "internship_victor": "Atualmente em um estágio na Compass UOL voltado para blockchain"
+  "internship_victor": "Atualmente em um estágio na Compass UOL voltado para blockchain",
+  "projects_description": "Explore nossos projetos recentes e descubra o resultado do nosso trabalho em equipe. Desde aplicações web dinâmicas até experimentos criativos, cada projeto reflete nosso compromisso conjunto com qualidade e inovação. Sinta-se à vontade para explorar, aprender e se inspirar com nossas criações."
 }

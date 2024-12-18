@@ -11,20 +11,20 @@
 }
 
 .experience-item {
+    width: 100%;
     display: flex;
     align-items: flex-start;
     margin-bottom: 40px;
     padding: 20px;
-    border-left: 5px solid #007bff;
+    border-left: 5px solid var(--blue);
     border-radius: 8px;
-    background-color: var(--white-bg);
+    background-color: var(--white-secondary);
     text-align: start;
 }
 
 .lateralbar {
     width: 5px;
     height: 100%;
-    background-color: #007bff;
     margin-right: 20px;
 }
 
@@ -65,50 +65,76 @@ body.dark-mode .experience-item p {
     color: #ffffff;
 }
 
-/* RESPONSIVIDADE */
+/* Responsividade */
+@media (max-width: 1024px) {
+    .experience {
+        max-width: 90%;
+        padding: 15px;
+    }
 
-/* Telas menores que 768px (tablets) */
+    .experience h1 {
+        font-size: 2rem;
+    }
+
+    .experience-item {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .lateralbar {
+        width: 100%;
+        height: 5px;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .experience-item h2 {
+        font-size: 1.8rem;
+    }
+
+    .experience-item p {
+        font-size: 0.95rem;
+    }
+}
+
 @media (max-width: 768px) {
     .experience {
-      padding: 15px;
+        max-width: 100%;
+        padding: 10px;
     }
-  
+
     .experience h1 {
-      font-size: 2rem;
-      margin-bottom: 30px;
+        font-size: 1.8rem;
     }
-  
+
     .experience-item {
-      flex-direction: column;
-      padding: 15px;
+        margin-bottom: 30px;
+        padding: 10px;
     }
-  
+
     .experience-item h2 {
-      font-size: 1.5rem;
+        font-size: 1.6rem;
     }
-  
+
     .experience-item p {
-      font-size: 0.9rem;
+        font-size: 0.9rem;
     }
-  }
-  
-  /* Telas menores que 480px (celulares) */
-  @media (max-width: 480px) {
+}
+
+@media (max-width: 480px) {
     .experience h1 {
-      font-size: 1.8rem;
-      margin-bottom: 20px;
+        font-size: 1.5rem;
     }
-  
+
     .experience-item {
-      padding: 10px;
+        padding: 8px;
     }
-  
+
     .experience-item h2 {
-      font-size: 1.3rem;
+        font-size: 1.4rem;
     }
-  
+
     .experience-item p {
-      font-size: 0.8rem;
+        font-size: 0.85rem;
     }
-  }
-  
+}

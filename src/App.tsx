@@ -1,19 +1,24 @@
 import "./App.css";
-import "./i18n"; 
+import "./i18n";
 
-import Header from "./components/Header";
-import Projects from "./components/Projects";
-import Bio from "./components/Bio";
-import Experience from "./components/Experience";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/home/Header";
+
+
+import Home from "./pages/Home"; 
+import Projects from "./pages/Projects";
 
 function App() {
   return (
-    <div className="container">
-      <Header />
-      <Bio />
-      <Experience />
-      <Projects />
-    </div>
+    <Router>
+      <div className="container">
+        <Header />
+        <Routes>
+          <Route path="Portfolio/" element={<Home />} />
+          <Route path="/Portfolio/projects" element={<Projects />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

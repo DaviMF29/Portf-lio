@@ -16,6 +16,7 @@
     align-items: center;
     gap: 30px;
     font-size: 0.8rem;
+    margin-left: 10px;
 }
 
 .header-infos a {
@@ -31,12 +32,26 @@
     color: var(--black);
 }
 
+.header-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
 /* ÍCONES DO HEADER */
 .header-icons {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 20px;
+}
+
+.header-logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
 }
 
 .icon {
@@ -50,7 +65,7 @@
 
 /* MODO DARK */
 body.dark-mode {
-    background-color: var(--black);
+    background-color: var(--black-bg);
     color: var(--white);
 }
 
@@ -75,12 +90,14 @@ body.dark-mode .icon:hover {
     }
 
     .header-infos a {
-        font-size: 1rem; /* Reduz o tamanho da fonte */
+        display: none; /* Reduz o tamanho da fonte */
     }
 
     .header-icons {
         gap: 150px;
     }
+
+    
 }
 
 @media (min-width: 481px) and (max-width: 768px) {

@@ -17,8 +17,11 @@ html, body {
   --white: #ffffff;
   --light-gray: #a0a0a0;
   --gray: #585858;
+  --dark-gray: #333;
   --black: #000;
+  --black-bg: #121212;
   --blue: #007bff;
   --yellow: #ffc107;
   --white-bg: #F5F5F5;
+  --white-secondary : #E6E4DD;
 }

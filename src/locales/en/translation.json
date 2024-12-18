@@ -1,12 +1,14 @@
 {
   "projects": "Projects",
   "about": "About",
-  "about_us": "We are Davi Miguel and Antônio Victor, graduates and undergraduates in Computer Science from the State University of Paraíba. We create functional and responsive websites, focused on meeting the needs of companies and professionals looking to stand out in the digital environment.",
-  "info_site_moviemetricks": "Website to collect information about movies and series, with details about cast, synopsis, direction, and reviews, making it easier to find your favorite productions.",
-  "info_site_academia": "Website for a fictional gym with details about services, available plans, schedules, and contact information, making it easier for customers to access.",
+  "about_us": "We are Davi Miguel and Antônio Victor, graduates and undergraduates in Computer Science at the State University of Paraíba. We create functional and responsive websites focused on meeting the needs of companies and professionals seeking to stand out in the digital space.",
+  "info_site_moviemetricks": "A website to gather information about movies and series, from cast, synopsis, and direction to reviews, making it easier to search for your favorite films.",
+  "info_site_academia": "A website for a fictional gym featuring services, available plans, schedules, and contact information, making it easier for customers to access.",
+  "info_site_posterfy": "A website that uses the Spotify API to create album posters, allowing users to search, gather data, and organize information in an attractive way.",
   "view_all": "View all",
   "graduating_davi": "Graduated in Computer Science",
   "graduanting_antonio": "Undergraduate in Computer Science (eighth semester)",
   "internship_davi": "Currently in a software development internship",
-  "internship_victor": "Currently in an internship at Compass UOL focused on blockchain"
+  "internship_victor": "Currently interning at Compass UOL in blockchain",
+  "projects_description": "Explore our recent projects and discover the results of our teamwork. From dynamic web applications to creative experiments, each project reflects our shared commitment to quality and innovation. Feel free to explore, learn, and get inspired by our creations."
 }

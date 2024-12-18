@@ -1,0 +1,236 @@
+/* GERAL */
+.projects {
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center; /* Centraliza o título */
+}
+
+.title h1 {
+    font-size: 2rem;
+    color: var(--black);
+    margin-bottom: 10px;
+}
+
+/* Cartão */
+.card-infos {
+    width: 100%;
+    height: auto; /* Permite ajuste automático com o conteúdo */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    background-color: var(--white);
+    transition: transform 0.3s ease, filter 0.5s ease;
+    filter: grayscale(100%);
+    margin-top: 40px;
+}
+
+.card-infos img {
+    width: 50%;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.card-infos h1,
+.card-infos h2 {
+    margin: 10px 0; /* Margem vertical para espaçamento */
+}
+
+.card-infos h1 {
+    font-size: 1.5rem;
+    color: var(--dark-gray);
+}
+
+.card-infos h2 {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.card-infos:hover {
+    filter: grayscale(0%);
+}
+
+/* Botão "Ver Todos" */
+.viewall {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.viewall a {
+    width: 100%;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 500;
+    background: var(--white-secondary);
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.viewall a:hover {
+    color: var(--white);
+    background-color: var(--black-bg);
+}
+
+.project-infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    flex: 1;
+    height: 100%;
+    margin-left: 35px;
+}
+
+.project-title {
+    display: flex;
+    flex-direction: row;
+}
+
+.project-title img{
+    width: 40px;
+    height: 40px;
+    filter: grayscale(0%);
+    margin-right: 10px;
+}
+
+#academia_logo {
+    width: 50px;
+    height: 50px;
+    filter: grayscale(0%);
+    margin-right: 0;
+}
+
+/* Dark mode styles */
+body.dark-mode .card-infos {
+    background-color: transparent;
+    
+}
+body.dark-mode .title h1 {
+    color: var(--white);
+}
+
+body.dark-mode .card-infos h1,
+body.dark-mode .card-infos h2 {
+    color: var(--white);
+}
+
+body.dark-mode .viewall a {
+    color: var(--white);
+}
+body.dark-mode .viewall a {
+    color: var(--white);
+    border-color: var(--gray);
+}
+
+body.dark-mode .viewall a:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+body.dark-mode .viewall a {
+    background: var(--dark-gray)
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .card-infos {
+        flex-direction: column; /* Alinha o conteúdo em coluna */
+        text-align: center;
+        padding: 10px;
+        filter: grayscale(0%);
+    }
+
+    .card-infos img {
+        width: 100%; /* Imagem ocupa toda a largura */
+        margin-bottom: 15px;
+    }
+
+    .project-infos {
+        margin-left: 0; /* Remove margem lateral */
+    }
+
+    .project-title img {
+        width: 30px;
+        height: 30px; /* Ajusta tamanho do ícone */
+    }
+
+    #academia_logo {
+        width: 40px;
+        height: 40px; /* Ajusta tamanho do logo */
+        margin-top: 10px;
+    }
+
+    #movie_logo {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title h1 {
+        font-size: 1.8rem; /* Diminui tamanho do título */
+    }
+
+    .card-infos {
+        padding: 8px;
+    }
+
+    .card-infos h1 {
+        font-size: 1.3rem;
+    }
+
+    .card-infos h2 {
+        font-size: 0.9rem;
+    }
+
+    .viewall a {
+        font-size: 1rem; /* Ajusta tamanho do botão */
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title h1 {
+        font-size: 1.5rem; /* Diminui ainda mais o título */
+    }
+
+    .card-infos {
+        padding: 5px;
+        margin-top: 20px;
+    }
+
+    .card-infos img {
+        width: 100%; /* Imagem ocupa toda a largura */
+    }
+
+    .project-card-content h1 {
+        font-size: 0.7rem;
+    }
+
+    .card-infos h2 {
+        font-size: 0.8rem;
+    }
+
+    .viewall a {
+        font-size: 0.9rem;
+        padding: 5px 10px; /* Botão menor */
+    }
+
+    .project-title img {
+        width: 25px;
+        height: 25px; /* Ícone menor */
+    }
+
+    #academia_logo {
+        width: 30px;
+        height: 30px; /* Logo menor */
+    }
+}

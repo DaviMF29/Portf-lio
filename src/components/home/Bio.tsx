@@ -5,7 +5,7 @@ const Bio = () => {
   return (
     <section className="bio-container">
       <div className="bio-content">
-        <h1 className="bio-title">DV</h1>
+        <h1 className="bio-title">D.A</h1>
         <p className="bio-description">{t("about_us")}</p>
       </div>
     </section>
