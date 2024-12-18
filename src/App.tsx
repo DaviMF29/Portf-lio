@@ -5,22 +5,23 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/home/Header";
 
 
-import Home from "./pages/Home"; 
+import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Footer from "./components/footer/Footer";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Portfolio">
       <div className="container">
         <Header />
         <Routes>
-          <Route path="Portfolio/" element={<Home />} />
-          <Route path="/Portfolio/projects" element={<Projects />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
         <Footer />
       </div>
     </Router>
+
   );
 }
 
