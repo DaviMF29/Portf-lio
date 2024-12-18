@@ -25,7 +25,7 @@ const Header = () => {
   const toggleDarkMode = () => {
     const newMode = !darkMode;
     setDarkMode(newMode);
-    localStorage.setItem('darkMode', newMode); // Salva no localStorage
+    localStorage.setItem('darkMode', newMode.toString()); // Salva no localStorage
   };
 
   return (
