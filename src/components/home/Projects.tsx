@@ -3,8 +3,8 @@ import academia from "../../images/academia.png";
 import moviemetricks from "../../images/moviemetricks.png";
 import "./Projects.css";
 
-import movie_logo from "../../images/sync.png";
 import academia_logo from "../../images/academia_logo.gif";
+import movie_logo from "../../images/movie_logo.png";
 
 const Projects = () => {
     return (
