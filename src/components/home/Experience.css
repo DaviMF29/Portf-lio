@@ -68,6 +68,7 @@ body.dark-mode .experience-item p {
 @media (max-width: 1024px) {
     .experience {
         max-width: 90%;
+        padding-left: 0px;
     }
 
     .experience h1 {
@@ -87,16 +88,19 @@ body.dark-mode .experience-item p {
 
     .experience-item h2 {
         font-size: 1.8rem;
+        margin-left: 15px;
     }
 
     .experience-item p {
         font-size: 0.95rem;
+        margin-left: 15px;
     }
 }
 
 @media (max-width: 768px) {
     .experience {
         max-width: 100%;
+        padding-left: 0px;
     }
 
     .experience h1 {
@@ -118,6 +122,11 @@ body.dark-mode .experience-item p {
 }
 
 @media (max-width: 480px) {
+
+    .experience{
+        padding-left: 0px;
+    }
+
     .experience h1 {
         font-size: 1.5rem;
     }
