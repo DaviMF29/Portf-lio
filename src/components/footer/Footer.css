@@ -1,0 +1,89 @@
+.footer {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center;
+    text-align: center; /* Centraliza o texto */
+    flex-direction: column; /* Alinha o conteúdo verticalmente */
+    padding: 20px;
+    height: 40px;
+    gap: 20px;
+  }
+  
+  .footer-right {
+    margin-top: 10px; /* Adiciona um espaçamento superior */
+  }
+  
+  .github-link {
+    display: inline-block; /* Permite centralizar a âncora */
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    text-align: center; /* Centraliza o texto interno */
+  }
+  
+  .github-link:hover {
+    color: #007bff;
+  }
+  
+  
+  .highlight {
+    text-decoration: underline;
+  }
+  
+  /* Modo Escuro */
+  body.dark-mode .footer {
+    background-color: transparent;
+    color: #f5f5f5;
+  }
+  
+  body.dark-mode .footer-icons a {
+    background-color: #555;
+  }
+  
+  body.dark-mode .footer-icons a:hover {
+    background-color: #777;
+  }
+  
+  body.dark-mode .github-link {
+    color: #f5f5f5;
+  }
+  
+  body.dark-mode .github-link:hover {
+    color: #00bfff;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+      gap: 20px;
+    }
+  
+    .footer-icons {
+      gap: 10px;
+    }
+  
+    .footer-right {
+      margin-top: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer {
+      padding: 10px;
+    }
+  
+    .footer-icons a {
+      width: 35px;
+      height: 35px;
+      font-size: 1rem;
+    }
+  
+    .github-link {
+      font-size: 0.9rem;
+    }
+  }
+  

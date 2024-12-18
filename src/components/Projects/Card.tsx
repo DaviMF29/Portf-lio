@@ -17,8 +17,12 @@ const Card = () => {
             <h1>Ultra Academy</h1>
             <h2>{t("info_site_academia")}</h2>
             <div className="action-button">
-              <a href="https://davimf29.github.io/Academia/"><FaPlay /> Deploy</a>
-              <a href="https://github.com/DaviMF29/Academia"><FaGithub /> GitHub</a>
+              <a href="https://davimf29.github.io/Academia/" target="_blank" rel="noopener noreferrer">
+                <FaPlay /> Deploy
+              </a>
+              <a href="https://github.com/DaviMF29/Academia" target="_blank" rel="noopener noreferrer">
+                <FaGithub /> GitHub
+              </a>
             </div>
           </div>
         </div>
@@ -28,8 +32,12 @@ const Card = () => {
             <h1>Movie Metricks</h1>
             <h2>{t("info_site_moviemetricks")}</h2>
             <div className="action-button">
-              <a href="https://moviemetricks.vercel.app/"><FaPlay /> Deploy</a>
-              <a href="https://github.com/avictormorais/moviemetricks"><FaGithub /> GitHub</a>
+              <a href="https://moviemetricks.vercel.app/" target="_blank" rel="noopener noreferrer">
+                <FaPlay /> Deploy
+              </a>
+              <a href="https://github.com/avictormorais/moviemetricks" target="_blank" rel="noopener noreferrer">
+                <FaGithub /> GitHub
+              </a>
             </div>
           </div>
         </div>
@@ -39,8 +47,12 @@ const Card = () => {
             <h1>Posterfy</h1>
             <h2>{t("info_site_posterfy")}</h2>
             <div className="action-button">
-              <a href="https://avictormorais.github.io/posterfy/"><FaPlay /> Deploy</a>
-              <a href="https://github.com/avictormorais/posterfy"><FaGithub /> GitHub</a>
+              <a href="https://avictormorais.github.io/posterfy/" target="_blank" rel="noopener noreferrer">
+                <FaPlay /> Deploy
+              </a>
+              <a href="https://github.com/avictormorais/posterfy" target="_blank" rel="noopener noreferrer">
+                <FaGithub /> GitHub
+              </a>
             </div>
           </div>
         </div>
